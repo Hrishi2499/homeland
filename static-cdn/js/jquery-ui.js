@@ -35,6 +35,10 @@ var version = $.ui.version = "1.12.1";
 //>>docs: http://api.jqueryui.com/jQuery.widget/
 //>>demos: http://jqueryui.com/widget/
 
+const checkbox = document.getElementById('checkbox');
+checkbox.addEventListener('change', () =>{
+	console.log("Pressed");
+});
 
 
 var widgetUuid = 0;

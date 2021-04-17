@@ -23,8 +23,7 @@
         <div class="col-4 col-md-4 col-lg-8">
           <nav
             class="site-navigation text-right text-md-right"
-            role="navigation"
-          >
+            role="navigation">
             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
               <a href="#" class="site-menu-toggle js-menu-toggle text-white"
                 ><span class="icon-menu h3"></span
@@ -74,15 +73,15 @@
                     {% if 'dashboard' in request.path %}
                       class="active"
                     {% endif %}
-                    ><a href="{% url 'accounts:dashboard' %}">Dashboard</a></li>
+                    ><a href="{% url 'accounts:dashboard' %}" style="color: #000 !important">Dashboard</a></li>
                     <li
                     {% if 'add' in request.path %}
                       class="active"
                     {% endif %}
-                    ><a href="{% url 'properties:add' %}">Add Property</a></li>
-                    <li><a href="{% url 'accounts:feedback' %}">Feedback</a></li>
+                    ><a href="{% url 'properties:add' %}" style="color: #000 !important">Add Property</a></li>
+                    <li><a href="{% url 'accounts:feedback' %}" style="color: #000 !important">Feedback</a></li>
                     <li>
-                      <a href="javascript:{document.getElementById('logout').submit()}">
+                      <a href="javascript:{document.getElementById('logout').submit()}" style="color: #000 !important">
                         Logout
                       </a>
                       <form action="{% url 'accounts:logout' %}" method="POST" id="logout">
@@ -109,6 +108,12 @@
                 </li>
               {% endif %}
               <li></li>
+              <li>
+                <label class="switch">
+                  <input type="checkbox" class="chk" id="chk">
+                  <span class="slider round"></span>
+                </label>
+              </li>
             </ul>
           </nav>
         </div>

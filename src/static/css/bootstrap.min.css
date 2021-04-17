@@ -64,6 +64,10 @@ body {
   text-align: left;
   background-color: #fff; }
 
+
+.dark{
+  color: #fff !important;
+}
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
@@ -502,7 +506,9 @@ pre {
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px; 
+  isolation: isolate !important;
+}
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -1693,7 +1699,9 @@ textarea.form-control {
     color: #6c757d; }
 
 .form-check-label {
-  margin-bottom: 0; }
+  margin-bottom: 0; 
+  color: rgba(0, 0, 0, 0.6) !important;
+}
 
 .form-check-inline {
   display: -webkit-inline-box;
@@ -5036,7 +5044,7 @@ button.bg-danger:focus {
   background-color: #df1b0e !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: #f8f9fa; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -7184,7 +7192,9 @@ button.bg-dark:focus {
   font-weight: 400 !important; }
 
 .font-weight-bold {
-  font-weight: 700 !important; }
+  font-weight: 700 !important; 
+  color: rgba(0, 0, 0, 0.6) !important;
+}
 
 .font-italic {
   font-style: italic !important; }
